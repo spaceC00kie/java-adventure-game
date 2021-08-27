@@ -11,6 +11,7 @@ public class Main {
         String answer1 = scanner.nextLine();
         boolean answered = false;
         while (!answered) {
+
             if (answer1.equals("left")) {
                 //do a thing
                 System.out.println("go up or down");
@@ -24,20 +25,33 @@ public class Main {
                         boolean answered3 = false;
                         while (!answered3) {
                             if (answer3.equals("red")) {
-                                System.out.println("you are done");
                                 answered3 = true;
                             }
                             else if (answer3.equals("blue")) {
                                 answered3 = true;
                             }
                             else{
-                                //try again
+                                //try again for answer3
                             }
                         }
                         answered2 = true;
                     }
                     else if (answer2.equals("down")) {
                         //do another thing
+                        System.out.println("pick black or white");
+                        String answer4 = scanner.nextLine();
+                        boolean answered4 = false;
+                        while (!answered4) {
+                            if (answer4.equals("black")) {
+                                answered4 = true;
+                            }
+                            else if (answer4.equals("white")) {
+                                answered4 = true;
+                            }
+                            else {
+                                //try again for answer4
+                            }
+                        }
                         answered2 = true;
                     }
                     else {
@@ -47,10 +61,23 @@ public class Main {
                 answered = true;
             } else if (answer1.equals("right")) {
                 //do another thing
-                //System.out.println("go through or around");
+                System.out.println("dog or cat");
+                String answer5 = scanner.nextLine();
+                boolean answered5 = false;
+                while (!answered5) {
+                    if (answer5.equals("dog")) {
+
+                    }
+                    else if (answer5.equals("cat")) {
+
+                    }
+                    else {
+                        //try again for answer5
+                    }
+                }
                 answered = true;
             } else {
-                //try again
+                //try again for answer1
             }
         }
     }
