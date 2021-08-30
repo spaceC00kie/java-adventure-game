@@ -7,11 +7,11 @@ public class Main {
         String name = scanner.nextLine();
         System.out.println(name);
 
+
+        boolean answered = false;
         System.out.println("go left or right");
         String answer1 = scanner.nextLine();
-        boolean answered = false;
         while (!answered) {
-
             if (answer1.equals("left")) {
                 //do a thing
                 System.out.println("go up or down");
@@ -31,7 +31,8 @@ public class Main {
                                 answered3 = true;
                             }
                             else{
-                                //try again for answer3
+                                System.out.println("you gotta pick one");
+                                scanner.nextLine();
                             }
                         }
                         answered2 = true;
@@ -49,13 +50,15 @@ public class Main {
                                 answered4 = true;
                             }
                             else {
-                                //try again for answer4
+                                System.out.println("pick a side");
+                                scanner.nextLine();
                             }
                         }
                         answered2 = true;
                     }
                     else {
-                        //try again for answer2
+                        System.out.println("How do you feel?");
+                        scanner.nextLine();
                     }
                 }
                 answered = true;
@@ -66,18 +69,21 @@ public class Main {
                 boolean answered5 = false;
                 while (!answered5) {
                     if (answer5.equals("dog")) {
-
+                        System.out.println("yes or no");
+                        String answer6 = scanner.nextLine();
                     }
                     else if (answer5.equals("cat")) {
 
                     }
                     else {
-                        //try again for answer5
+                        System.out.println("just pick a pet, dude");
+                        scanner.nextLine();
                     }
                 }
                 answered = true;
             } else {
-                //try again for answer1
+                System.out.println("try again");
+                scanner.nextLine();
             }
         }
     }
