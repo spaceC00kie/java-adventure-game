@@ -71,9 +71,20 @@ public class Main {
                     if (answer5.equals("dog")) {
                         System.out.println("yes or no");
                         String answer6 = scanner.nextLine();
+			boolean answered6 = false;
+			while (!answered6) {
+			    if (answer6.equals("yes"));
+				answered6 = true;
+			} 
                     }
                     else if (answer5.equals("cat")) {
-
+			System.out.println("rain or shine");
+			String answer7 = scanner.nextLine();
+			boolean answered7 = false;
+			while (!answered7) {
+			    if (answer7.equals("rain"));
+				answered7 = true;
+			} 
                     }
                     else {
                         System.out.println("just pick a pet, dude");
