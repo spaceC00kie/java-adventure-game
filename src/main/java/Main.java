@@ -13,13 +13,11 @@ public class Main {
         String answer1 = scanner.nextLine();
         while (!answered) {
             if (answer1.equals("left")) {
-                //do a thing
                 System.out.println("go up or down");
                 String answer2 = scanner.nextLine();
                 boolean answered2 = false;
                 while (!answered2) {
                     if (answer2.equals("up")) {
-                        //do a thing
                         System.out.println("pick red or blue");
                         String answer3 = scanner.nextLine();
                         boolean answered3 = false;
@@ -38,7 +36,6 @@ public class Main {
                         answered2 = true;
                     }
                     else if (answer2.equals("down")) {
-                        //do another thing
                         System.out.println("pick black or white");
                         String answer4 = scanner.nextLine();
                         boolean answered4 = false;
@@ -63,7 +60,6 @@ public class Main {
                 }
                 answered = true;
             } else if (answer1.equals("right")) {
-                //do another thing
                 System.out.println("dog or cat");
                 String answer5 = scanner.nextLine();
                 boolean answered5 = false;
@@ -71,25 +67,42 @@ public class Main {
                     if (answer5.equals("dog")) {
                         System.out.println("yes or no");
                         String answer6 = scanner.nextLine();
-			boolean answered6 = false;
-			while (!answered6) {
-			    if (answer6.equals("yes"));
-				answered6 = true;
-			} 
+			            boolean answered6 = false;
+			            while (!answered6) {
+			               if (answer6.equals("yes")) {
+			                   answered6 = true;
+			               }
+			               else if (answer6.equals("no")) {
+			                   answered6 = true;
+                           }
+			               else {
+			                   System.out.println("Yes or no, man. That's all I got.");
+			                   scanner.nextLine();
+                           }
+			            }
                     }
                     else if (answer5.equals("cat")) {
-			System.out.println("rain or shine");
-			String answer7 = scanner.nextLine();
-			boolean answered7 = false;
-			while (!answered7) {
-			    if (answer7.equals("rain"));
-				answered7 = true;
-			} 
+		            	System.out.println("rain or shine");
+		            	String answer7 = scanner.nextLine();
+		            	boolean answered7 = false;
+	            		while (!answered7) {
+		            	    if (answer7.equals("rain")) {
+		            	        answered7 = true;
+                            }
+		            	    else if (answer7.equals("shine")) {
+		            	        answered7 = true;
+                            }
+		            	    else {
+		            	        System.out.println("pick some weather");
+		            	        scanner.nextLine();
+                            }
+			            }
                     }
                     else {
                         System.out.println("just pick a pet, dude");
                         scanner.nextLine();
                     }
+                    answered5 = true;
                 }
                 answered = true;
             } else {
@@ -97,9 +110,5 @@ public class Main {
                 scanner.nextLine();
             }
         }
-    }
-
-    private static void sample(){
-        System.out.println("A sample was called");
     }
 }
