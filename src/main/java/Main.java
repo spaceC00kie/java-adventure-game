@@ -5,9 +5,9 @@ public class Main {
         String isPlaying = "yes";
         while (isPlaying.equals("yes")) {
             Scanner scanner = new Scanner(System.in);
-            System.out.println("What is your name?");
-            String name = scanner.nextLine();
-            System.out.println(name);
+            //System.out.println("What is your name?");
+            //String name = scanner.nextLine();
+            //System.out.println(name);
 
             boolean answered = false;
             System.out.println("go left or right");
@@ -44,13 +44,13 @@ public class Main {
                                     answered4 = true;
                                 } else {
                                     System.out.println("pick a side");
-                                    scanner.nextLine();
+                                    answer4 = scanner.nextLine();
                                 }
                             }
                             answered2 = true;
                         } else {
                             System.out.println("Pick up or down");
-                            scanner.nextLine();
+                            answer2 = scanner.nextLine();
                         }
                     }
                     answered = true;
@@ -71,9 +71,10 @@ public class Main {
                                     answered6 = true;
                                 } else {
                                     System.out.println("Yes or no, man. That's all I got.");
-                                    scanner.nextLine();
+                                    answer6 = scanner.nextLine();
                                 }
                             }
+                            answered5 = true;
                         } else if (answer5.equals("cat")) {
                             System.out.println("rain or shine");
                             String answer7 = scanner.nextLine();
@@ -85,19 +86,20 @@ public class Main {
                                     answered7 = true;
                                 } else {
                                     System.out.println("pick some weather");
-                                    scanner.nextLine();
+                                    answer7 = scanner.nextLine();
                                 }
                             }
+                            answered5 = true;
                         } else {
                             System.out.println("just pick a pet, dude");
-                            scanner.nextLine();
+                            answer5 = scanner.nextLine();
                         }
-                        answered5 = true;
+
                     }
                     answered = true;
                 } else {
                     System.out.println("try again");
-                    scanner.nextLine();
+                    answer1 = scanner.nextLine();
                 }
             }
 
